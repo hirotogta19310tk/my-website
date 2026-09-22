@@ -445,3 +445,259 @@ body{
     margin-top: 60px;
     padding-bottom: 8px;
 }
+
+
+/* ==========================
+   スマホ対応
+   画面幅768px以下
+========================== */
+
+@media screen and (max-width: 768px) {
+
+    /* 共通設定 */
+    .section-wrap {
+        padding: 50px 0;
+    }
+
+    .section-inner,
+    .section-inner-s {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .section-ttl {
+        font-size: 36px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* ヘッダー */
+    .header {
+        width: 100%;
+        left: 0;
+        top: 20px;
+        padding: 0 20px;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .header-logo {
+        width: 120px;
+    }
+
+    .header-nav {
+        width: 100%;
+    }
+
+    .header-nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .header-nav-item {
+        margin-left: 0;
+    }
+
+    .header .icon {
+        display: none;
+    }
+
+    /* メインビジュアル */
+    .kv.__index {
+        height: 600px;
+        background-position: center;
+    }
+
+    .kv.__menu,
+    .kv.__info {
+        height: 350px;
+        background-position: center;
+    }
+
+    .kv-copy {
+        width: 80%;
+    }
+
+    /* コンセプト */
+    .concept-txt-main {
+        font-size: 22px;
+        margin-top: 30px;
+    }
+
+    .concept-txt-sub {
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .concept-img-box {
+        height: 220px;
+        margin-top: 40px;
+    }
+
+    .concept-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .concept-detail-wrap {
+        flex-direction: column;
+        margin-top: 40px;
+        gap: 30px;
+    }
+
+    .concept-detail-content {
+        width: 100%;
+    }
+
+    .concept-detail-ttl {
+        font-size: 24px;
+    }
+
+    .concept-detail-txt {
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .concept-detail-img-wrap {
+        width: 100%;
+        gap: 10px;
+    }
+
+    .concept-detail-img-box {
+        width: calc(50% - 5px);
+        height: 220px;
+    }
+
+    .concept-detail-img-box:nth-child(1) {
+        margin-top: 30px;
+    }
+
+    .concept-detail-img-box:nth-child(2) {
+        margin: 0 0 30px;
+    }
+
+    .concept-detail-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* メニュー */
+    .menu-wrap {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px 15px;
+        margin-top: 40px;
+    }
+
+    .menu-item {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .menu-item:nth-of-type(n+4) {
+        margin-top: 0;
+    }
+
+    .menu-img-box {
+        height: 140px;
+    }
+
+    .menu-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .menu-txt {
+        font-size: 14px;
+    }
+
+    .menu-price {
+        font-size: 13px;
+    }
+
+    /* お知らせ */
+    .info-list {
+        margin-top: 40px;
+    }
+
+    .info-item + .info-item {
+        margin-top: 25px;
+    }
+
+    .info-tag {
+        margin-left: 10px;
+    }
+
+    .info-single .info-txt {
+        font-size: 18px;
+    }
+
+    .info-single-content img {
+        height: auto;
+    }
+
+    /* アクセス */
+    .access-content {
+        flex-direction: column;
+        margin-top: 40px;
+        gap: 30px;
+    }
+
+    .access-content-img-box {
+        min-width: 0;
+        width: 100%;
+        height: 220px;
+    }
+
+    .access-content-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .access-content-txt-box {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .access-txt {
+        font-size: 14px;
+        overflow-wrap: anywhere;
+    }
+
+    .access-map iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* フッター */
+    .footer {
+        padding-top: 40px;
+    }
+
+    .footer-nav-list {
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .footer-nav-item + .footer-nav-item {
+        margin-left: 0;
+    }
+
+    .footer-copy {
+        margin-top: 40px;
+    }
+
+}
+  
